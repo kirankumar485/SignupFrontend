@@ -11,7 +11,7 @@ const Users = () => {
             try {
                 const token = localStorage.getItem("token");
                 console.log("Token:", token);
-                const response = await axios.get("http://localhost:5000/api/users", {
+                const response = await axios.get("https://signupbackend-lu57.onrender.com/api/users", {
                     headers: { Authorization: token },
                 });
                 console.log("Response:", response);

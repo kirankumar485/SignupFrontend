@@ -32,7 +32,7 @@ const Register = ({ setIsLoggedIn }) => {
             formData.append("image", image);
 
             const response = await axios.post(
-                "http://localhost:5000/api/auth/register",
+                "https://signupbackend-lu57.onrender.com/api/auth/register",
                 formData,
                 {
                     headers: {
